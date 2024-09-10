@@ -1,11 +1,14 @@
-import re
-import sys
-import os
-import requests
-from bs4 import BeautifulSoup
-from PyQt5.QtWidgets import (QApplication, QWidget, QVBoxLayout, QPushButton, QLineEdit, QFileDialog,
-                             QLabel, QProgressBar, QMessageBox, QHBoxLayout)
-from PyQt5.QtCore import Qt, QThread, pyqtSignal
+# Required Libraries (Version Notes)
+import re  # Built-in module of Python 3.12.6 for handling regular expressions.
+import sys  # Built-in module of Python 3.12.6 for system-specific parameters and functions.
+import os  # Built-in module of Python 3.12.6 for interacting with the operating system.
+import requests  # (v2.32.3) - For sending HTTP requests to fetch web pages and files.
+from bs4 import BeautifulSoup  # (v4.12.3) - For parsing HTML and extracting data from web pages.
+from PyQt5.QtWidgets import (  # (v5.15.12) - For creating the GUI using PyQt5 components.
+    QApplication, QWidget, QVBoxLayout, QPushButton, QLineEdit, QFileDialog,
+    QLabel, QProgressBar, QMessageBox, QHBoxLayout
+)
+from PyQt5.QtCore import Qt, QThread, pyqtSignal  # (v5.15.12) - For PyQt core functionalities like threading and signals.
 
 # Function to sanitize folder names
 def sanitize_folder_name(name):
