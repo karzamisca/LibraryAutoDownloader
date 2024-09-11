@@ -1,4 +1,3 @@
-# Required Libraries (Version Notes)
 import re  # Built-in module of Python 3.12.6 for handling regular expressions.
 import sys  # Built-in module of Python 3.12.6 for system-specific parameters and functions.
 import os  # Built-in module of Python 3.12.6 for interacting with the operating system.
